@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TrackIt</h1>
+    <form action="/" method="post">
+        <label for="new activity">Add a new activity:</label>
+        <input type="text" name="activity">
+        <button>Add</button>
+    </form>
+    <div>
+        Your activities:
+        <%for(activity of activities){%>
+            <ul>
+                <li>
+                    <%=activity%>
+                </li>
+            </ul>
+        <%}%>
+    </div>
+</body>
+
+</html>
