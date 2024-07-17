@@ -10,20 +10,10 @@
 <body>
     <h1>TrackIt</h1>
     <form action="/" method="post">
-        <label for="new activity">Add a new activity:</label>
-        <input type="text" name="activity">
+        <label for="new task">Add a new task:</label>
+        <input type="text" name="task">
         <button>Add</button>
     </form>
-    <div>
-        Your activities:
-        <%for(activity of activities){%>
-            <ul>
-                <li>
-                    <%=activity%>
-                </li>
-            </ul>
-        <%}%>
-    </div>
 </body>
 
 </html>

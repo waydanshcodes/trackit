@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TrackIt</h1>
+    <form action="/" method="post">
+        <label for="new task">Add a new task:</label>
+        <input type="text" name="task">
+        <button>Add</button>
+    </form>
+    <div>
+        <p>Your tasks: </p>
+        <%for(task of tasks){%>
+            <input type="checkbox" id="<%=task%>" name="<%=task%>">
+            <label for="<%=task%>"> <%=task%> </label><br>
+        <%}%>
+    </div>
+</body>
+
+</html>
